@@ -8,6 +8,6 @@
  
 ## What do it have now?
 
- Java edition 1.15.2 science tree (last release 0.11)
+ Java edition 1.15.2 science tree (last release 1.0.1)
 
  Java edition 1.14.4 science tree (plan to make it)
