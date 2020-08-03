@@ -10,6 +10,6 @@
  
 ## What do it have now?
 
- Java edition 1.15.2 science tree (last release 1.0.1+png)
+ Java edition 1.15.2 science tree (last release: 1.0.2emmx + 1.0.1png)
 
- Java edition 1.14.4 science tree (plan to make it)
+ Java edition 1.14.4 science tree (last pre-release: 0.0emmx)
