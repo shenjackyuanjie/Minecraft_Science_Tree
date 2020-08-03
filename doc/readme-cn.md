@@ -1,5 +1,7 @@
 # Minecraft_Science_Tree
 
+[English](https://github.com/shenjackyuanjie/Minecraft_Science_Tree/blob/master/README.md)
+
 ## 简介
 
  这里存储的是一个主要由shenjack制作而成的minecraft java edition 科技树

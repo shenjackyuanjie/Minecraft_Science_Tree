@@ -1,5 +1,7 @@
 # Minecraft_Science_Tree
 
+[中文](https://github.com/shenjackyuanjie/Minecraft_Science_Tree/blob/master/doc/readme-cn.md)
+
 ## description
 
  this is a Minecraft_Science_Tree made mostly by shenjack
