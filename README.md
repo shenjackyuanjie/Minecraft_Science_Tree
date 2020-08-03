@@ -8,7 +8,7 @@
 
  and also many changes by my friends
  
-## What do it have now?
+## What do it have here?
 
  Java edition 1.15.2 science tree (last release: 1.0.2emmx + 1.0.1png)
 
