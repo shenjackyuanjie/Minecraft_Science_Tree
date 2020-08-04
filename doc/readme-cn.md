@@ -12,4 +12,4 @@
  
  Java edition 1.15.2 科技树 (最新发布: 1.0.2emmx + 1.0.1png)
 
- Java edition 1.14.4 科技树 (最新预发布: 0.0emmx + 0.0png)
+ Java edition 1.14.4 科技树 (最新预发布: 0.1emmx + 0.0png)
