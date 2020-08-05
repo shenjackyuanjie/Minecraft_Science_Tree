@@ -10,9 +10,9 @@
  
 ## What do it have here?
 
- Java edition 1.15.2 science tree (last release: 1.0.4emmx + 1.0.4png)
+ Java edition 1.15.2 science tree (last release: 1.0.5emmx + 1.0.5png)
 
- Java edition 1.14.4 science tree (last pre-release: 1.0emmx + 0.1png)
+ Java edition 1.14.4 science tree (last pre-release: 1.0.1emmx + 1.0.1png)
 
 ## Thanks List
 

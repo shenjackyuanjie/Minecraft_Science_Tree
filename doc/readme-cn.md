@@ -10,9 +10,9 @@
  
 ## 我更新出来什么了？
  
- Java edition 1.15.2 科技树 (最新发布: 1.0.4emmx + 1.0.4png)
+ Java edition 1.15.2 科技树 (最新发布: 1.0.5emmx + 1.0.5png)
 
- Java edition 1.14.4 科技树 (最新预发布: 1.0emmx + 0.1png)
+ Java edition 1.14.4 科技树 (最新预发布: 1.0.1emmx + 1.0.1png)
 
 ## 感谢名单
 
