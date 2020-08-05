@@ -14,28 +14,40 @@
 
  Java edition 1.14.4 science tree (last pre-release: 1.0.1emmx + 1.0.1png)
 
+## Things to mind
+
+ If you have any new science idea,and the science tree didn't have it
+
+ or
+
+ Some part of the science tree's name/placement is not good
+
+ you cut an picture and send an issues to this project
+
+ I will soon see it and plus/change it
+
 ## Thanks List
 
-@Fallen_Breath
+ @Fallen_Breath
 
-@GhartRS
+ @GhartRS
 
-@Joker
+ @Joker
 
-@Billchyi
+ @Billchyi
 
-@Ten Of Spades
+ @Ten Of Spades
 
-@MIZUkiYuu
+ @MIZUkiYuu
 
-@Wisky_pro
+ @Wisky_pro
 
-@Ray Chen²⁰²⁰
+ @Ray Chen²⁰²⁰
 
-@七里晨光
+ @七里晨光
 
-@Alex.
+ @Alex.
 
-@flowerstarry_sky
+ @flowerstarry_sky
 
-@星之所在地
+ @星之所在地

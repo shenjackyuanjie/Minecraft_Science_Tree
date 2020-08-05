@@ -14,28 +14,40 @@
 
  Java edition 1.14.4 科技树 (最新预发布: 1.0.1emmx + 1.0.1png)
 
+## 需要说明一些事情
+
+ 如果你有新的科技点，但是科技树里没有
+
+ 或
+
+ 如果科技树的某部分的布局\命名不太好
+
+ 你可以截图并给项目发一个issuse
+
+ 我会很快看到并且添加\更改的
+
 ## 感谢名单
 
-@Fallen_Breath
+ @Fallen_Breath
 
-@GhartRS
+ @GhartRS
 
-@Joker
+ @Joker
 
-@Billchyi
+ @Billchyi
 
-@Ten Of Spades
+ @Ten Of Spades
 
-@MIZUkiYuu
+ @MIZUkiYuu
 
-@Wisky_pro
+ @Wisky_pro
 
-@Ray Chen²⁰²⁰
+ @Ray Chen²⁰²⁰
 
-@七里晨光
+ @七里晨光
 
-@Alex.
+ @Alex.
 
-@flowerstarry_sky
+ @flowerstarry_sky
 
-@星之所在地
+ @星之所在地
