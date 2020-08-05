@@ -10,6 +10,32 @@
  
 ## 我更新出来什么了？
  
- Java edition 1.15.2 科技树 (最新发布: 1.0.2emmx + 1.0.2png)
+ Java edition 1.15.2 科技树 (最新发布: 1.0.4emmx + 1.0.4png)
 
- Java edition 1.14.4 科技树 (最新预发布: 0.1emmx + 0.1png)
+ Java edition 1.14.4 科技树 (最新预发布: 1.0emmx + 0.1png)
+
+## 感谢名单
+
+@Fallen_Breath
+
+@GhartRS
+
+@Joker
+
+@Billchyi
+
+@Ten Of Spades
+
+@MIZUkiYuu
+
+@Wisky_pro
+
+@Ray Chen²⁰²⁰
+
+@七里晨光
+
+@Alex.
+
+@flowerstarry_sky
+
+@星之所在地
