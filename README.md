@@ -16,15 +16,11 @@
 
 ## Things to mind
 
- If you have any new science idea,and the science tree didn't have it
-
- or
-
- Some part of the science tree's name/placement is not good
+ If you have any new science idea , and the science tree didn't have it   or   Some part of the science tree's name/placement is not good
 
  you cut an picture and send an issues to this project
 
- I will soon see it and plus/change it
+ I will soon see it and plus / change it
 
 ## Thanks List
 
