@@ -10,7 +10,7 @@
  
 ## What do it have here?
 
-+ Java edition 1.15.2 science tree. (latest release: 1.0.6.emmx + 1.0.5.png)
++ Java edition 1.15.2 science tree. (latest release: 1.1.1.emmx + 1.1.1.png)
 
 + Java edition 1.14.4 science tree. (latest pre-release: 1.0.1.emmx + 1.0.1.png)
 

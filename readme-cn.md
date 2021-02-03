@@ -8,9 +8,9 @@ For English version, please go [here](https://github.com/shenjackyuanjie/Minecra
 
 同时也有很多来自于我的朋友们(QQ群友)帮助了我。
 
-## 我更新出来什么了？
+## 最新版是什么？
 
-Java edition 1.15.2 科技树。 (最新发布: 1.0.6emmx + 1.0.5png)
+Java edition 1.15.2 科技树。 (最新发布: 1.1.1.emmx + 1.1.1png)
 
 Java edition 1.14.4 科技树。 (最新预发布: 1.0.1emmx + 1.0.1png)
 
