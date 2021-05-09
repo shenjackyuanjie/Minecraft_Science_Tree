@@ -2190,7 +2190,7 @@ __config() -> {
 *``effect`：表示状态效果的字符串
 *``path`：有效的nbt路径
 *‘objective’：记分板目标名称的元组及其标准
-*``criteria`：记分牌标准的名称
+*``criteria`：计分板标准的名称
 *``particle``：粒子的名称
 *``recipe`：有效配方的名称。可输入配方数据函数。
 *``advancement``：进步的名称
@@ -2842,60 +2842,59 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
 *`堡垒桥`：庇格林堡垒的桥版(1.16)
  
 ### 功能名称(1.16.1及以下版本)
-
-*   `'oak'`
-*   `'oak_beehive'`:橡木蜂窝(1.15+)。
-*   `'oak_large'`:有树枝的橡树。
-*   `'oak_large_beehive'`:有树枝和蜂窝的橡树(1.15+)。
+*   `'oak'`
+*   `'oak_beehive'`: 橡木蜂窝(1.15+)。
+*   `'oak_large'`: 有树枝的橡树。
+*   `'oak_large_beehive'`: 有树枝和蜂窝的橡树(1.15+)。
 *   `'birch'`
-*   `'birch_large'`:桦树的高大变种。
-*   `'shrub'`:生长在丛林中的矮灌木。
-*   `'shrub_acacia'`:矮灌木,但配置有相思树(仅1.14)
-*   `'shrub_snowy'`:低矮的灌木丛,带白色方块(仅1.14)
-*   `'jungle'`:一棵树
-*   `'jungle_large'`:2x2丛林树
+*   `'birch_large'`: 桦树的高大变种。
+*   `'shrub'`: 生长在丛林中的矮灌木。
+*   `'shrub_acacia'`: 矮灌木,但配置有相思树(仅1.14)
+*   `'shrub_snowy'`: 低矮的灌木丛,带白色方块(仅1.14)
+*   `'jungle'`: 一棵树
+*   `'jungle_large'`: 2x2丛林树
 *   `'spruce'`
-*   `'spruce_large'`:2x2云杉树
-*   `'pine'`:具有最小叶龄的云杉(1.15+)
-*   `'pine_large'`:2x2云杉,最小叶龄(1.15+)
-*   `'spruce_matchstick'`:见1.15松木(仅1.14)。
-*   `'spruce_matchstick_large'`:见1.15松木大(仅1.14)。
+*   `'spruce_large'`: 2x2云杉树
+*   `'pine'`: 具有最小叶龄的云杉(1.15+)
+*   `'pine_large'`: 2x2云杉,最小叶龄(1.15+)
+*   `'spruce_matchstick'`: 见1.15松木(仅1.14)。
+*   `'spruce_matchstick_large'`: 见1.15松木大(仅1.14)。
 *   `'dark_oak'`
 *   `'acacia'`
-*   `'oak_swamp'`:有更多叶子和藤蔓的橡树。
-*   `'well'`:沙漠井
-*   `'grass'`:一些高高的草
-*   `'grass_jungle'`:小草丛特征(仅1.14)
-*   `'lush_grass'`:有斑驳蕨类植物的草(1.15+)
-*   `'tall_grass'`:2高草片(1.15+)
-*   `'fern'`:一些随机的2高蕨类植物
-*   `'cactus'`:随机的仙人掌
-*   `'dead_bush'`:几个随机的死布希
-*   `'fossils'`:地下化石,位置有点古怪
-*   `'mushroom_brown'`:大的棕色蘑菇。
-*   `'mushroom_red'`:大红蘑菇。
-*   `'ice_spike'`:冰钉。需要在下面放置雪垫。
-*   `'glowstone'`:辉石星团。上面需要尼日拉克。
-*   `'melon'`:一片甜瓜
-*   `'melon_pile'`:一堆瓜(1.15+)
-*   `'pumpkin'`:一片南瓜
-*   `'pumpkin_pile'`:一堆南瓜(1.15+)
+*   `'oak_swamp'`: 有更多叶子和藤蔓的橡树。
+*   `'well'`: 沙漠井
+*   `'grass'`: 一些高高的草
+*   `'grass_jungle'`: 小草丛特征(仅1.14)
+*   `'lush_grass'`: 有斑驳蕨类植物的草(1.15+)
+*   `'tall_grass'`: 2高草片(1.15+)
+*   `'fern'`: 一些随机的2高蕨类植物
+*   `'cactus'`: 随机的仙人掌
+*   `'dead_bush'`: 几个随机的死布希
+*   `'fossils'`: 地下化石,位置有点古怪
+*   `'mushroom_brown'`: 大的棕色蘑菇。
+*   `'mushroom_red'`: 大红蘑菇。
+*   `'ice_spike'`: 冰钉。需要在下面放置雪垫。
+*   `'glowstone'`: 辉石星团。上面需要尼日拉克。
+*   `'melon'`: 一片甜瓜
+*   `'melon_pile'`: 一堆瓜(1.15+)
+*   `'pumpkin'`: 一片南瓜
+*   `'pumpkin_pile'`: 一堆南瓜(1.15+)
 *   `'sugarcane'`
 *   `'lilypad'`
-*   `'dungeon'`:地牢。这些问题很难解决,而且经常失败。
-*   `'iceberg'`:冰山。在海平面上生成。
-*   `'iceberg_blue'`:蓝色的冰山。
+*   `'dungeon'`: 地牢。这些问题很难解决,而且经常失败。
+*   `'iceberg'`: 冰山。在海平面上生成。
+*   `'iceberg_blue'`: 蓝色的冰山。
 *   `'lake'`
 *   `'lava_lake'`
 *   `'end_island'`
-*   `'chorus'`:合唱植物。需要放置尾石。
-*   `'sea_grass'`:一片海草。需要水。
-*   `'sea_grass_river'`:一个变种。
+*   `'chorus'`: 合唱植物。需要放置尾石。
+*   `'sea_grass'`: 一片海草。需要水。
+*   `'sea_grass_river'`: 一个变种。
 *   `'kelp'`
-*   `'coral_tree'`, `'coral_mushroom'`, `'coral_claw'`:珊瑚种类繁多,颜色随意。
-*   `'coral'`:随机的珊瑚结构。产卵需要水。
+*   `'coral_tree'`, `'coral_mushroom'`, `'coral_claw'`: 珊瑚种类繁多,颜色随意。
+*   `'coral'`: 随机的珊瑚结构。产卵需要水。
 *   `'sea_pickle'`
-*   `'boulder'`:一个巨大的塔伊加生物群落中的岩石,苔藓形成。无法正确更新客户端,需要重新登录。
+*   `'boulder'`: 一个巨大的塔伊加生物群落中的岩石,苔藓形成。无法正确更新客户端,需要重新登录。
 
 
 ### 标准结构(自MC1.16.2+起)
@@ -3018,7 +3017,7 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
 它本身就有一定的规则来繁殖怪物,就像在超世界中扑通一个幽冥堡垒不会繁殖幽冥怪物,
 因为幽冥怪物只能在幽冥中产卵,但在幽冥中扑通一声-会表现得像一个有效的幽冥堡垒。
  
-###(已弃用)`custom维度(名称,种子?)`
+### (已弃用)`custom维度(名称,种子?)`
  
 已被`create datapack()`弃用,后者可用于设置自定义维度
  
@@ -3189,7 +3188,7 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
 要与实体合并的额外nbt数据。它与调用`run(`召唤…`)`不同的是
 将实体作为返回值返回,这是swell。
  
-##实体操纵
+## 实体操纵
  
 与使用大量不同查询函数的块不同,实体是使用`query`进行查询的
 函数并通过`modify`函数进行更改。所需的信息类型或要修改的值对于
@@ -3302,7 +3301,7 @@ query(e,`type`)=>村民
  
 ### `query(e,`scoreboard tags`)`,`query(e,`tags`)`(已弃用)
  
-实体记分牌标签列表。
+实体计分板标签列表。
  
 ### `query(e,`has scoreboard tag`,tag)`,`query(e,`has tag`,tag)`(已弃用)
  
@@ -4325,7 +4324,7 @@ Scarpet提供了在事件发生时执行特定函数的能力。为事件订阅�
 就在这之后。
   
 ### `u on  player  places  block(播放器,项目元组,手牌,块)`
-当玩家放置一个挡块时触发,挡块放置在世界上之后,但在记分牌触发或玩家库存之前
+当玩家放置一个挡块时触发,挡块放置在世界上之后,但在计分板触发或玩家库存之前
 已调整。
  
 ###玩家与实体(玩家,实体,手)交互`
@@ -4433,9 +4432,9 @@ Scarpet提供了在事件发生时执行特定函数的能力。为事件订阅�
 ### `uu on统计(玩家,类别,事件,值)`
 当玩家统计数据改变时触发。不通知周期性的有节奏的事件,即。
 ``死亡后的时间`,`休息后的时间`和`玩了一分钟`,因为这些都是在每一个滴答声中触发的。事件
-在更改这些统计信息的记分牌值之前处理。
+在更改这些统计信息的计分板值之前处理。
  
-##自定义事件和入侵scarpet事件系统
+## 自定义事件和入侵scarpet事件系统
  
 应用程序程序员可以定义和触发自己的自定义事件。与内置事件不同,所有自定义事件都传递一个值
 但这并不意味着它们不能将复杂的列表,映射或nbt标记作为消息传递。每个事件信号
@@ -4488,22 +4487,22 @@ signal_event(`tick`)//触发所有有tick事件的应用程序
 如果回调被指定为`null`,则给定的应用程序(或播放器应用程序实例)将停止处理该事件。
  
 <pre>
-foo(a)->print(a);
-处理事件(`boohoo`,`foo`);
- 
-条形图(a,b,c)->print([a,b,c]);
-handle event(`boohoo`,`bar`,2,3)//使用调用方传递的b=2,c=3,a
- 
-handle_event(`tick`,3;()->foo(`tick occurrend`));//内置事件
- 
-handle event(`tick`,null)//不,ima好,kthxbai
+foo(a) -> print(a);
+handle_event('boohoo', 'foo');
+
+bar(a, b, c) -> print([a, b, c]);
+handle_event('boohoo', 'bar', 2, 3) // using b = 2, c = 3, a - passed by the caller
+
+handle_event('tick', _() -> foo('tick happened')); // built-in event
+
+handle_event('tick', null)  // nah, ima good, kthxbai
 </pre>
  
 如果要传递模块中未定义的事件处理程序,请阅读上的提示
 `将函数引用传递给应用程序的其他模块`部分。
  
  
-### `signal\事件(事件,目标\玩家。。。args?)`
+### `signal_event(event, target_player?, ... args?)`
  
 激发特定事件。如果事件不存在(仅`handle event`创建缺少的新事件),或提供了参数列表
 与被调用者期望的参数不匹配,返回`null`,
@@ -4519,7 +4518,7 @@ signal_event(`player_breaks_block`,null,player,block);//以所有全局范围的
 signal_event(`tick`)//触发所有有tick事件的应用程序
 </pre>
  
-##自定义事件示例
+## 自定义事件示例
  
 下面的示例演示如何在同一播放器范围的应用程序的不同实例之间进行通信。值得注意的是
 如果事件名称匹配,该信号也可以触发其他应用程序。在这种情况下,将调用请求名称
@@ -4527,27 +4526,27 @@ signal_event(`tick`)//触发所有有tick事件的应用程序
  
  
 ``` 
-//tpa.sc公司
-全局\请求者=空;
-__配置()->{
-`命令`->{
-`<player>`->(to)->向事件发送信号(`tp request`,to,player()),
-`接受`->\()->if (全局请求者,
-run(`tp`+global_requester~`command_name`);
-全局请求者=空
-)
-},
-`参数`->{
-`player`->{`type`->`players`,`single`->true}
-}
+// tpa.sc
+global_requester = null;
+__config() -> {
+	'commands' -> {
+		'<player>' -> _(to) -> signal_event('tp_request', to, player()),
+      'accept' -> _() -> if(global_requester, 
+         run('tp '+global_requester~'command_name'); 
+         global_requester = null
+      )
+	},
+   'arguments' -> {
+      'player' -> {'type' -> 'players', 'single' -> true}
+   }
 };
-处理事件(`tp请求`,u请求)->(
-全局\请求者=请求;
-print(player(),格式(
-`w`+req+`请求传送给你。单击`,
-`yb here`,`^yb here`,`/tpa接受`,
-`我们必须接受。`
-));
+handle_event('tp_request', _(req) -> (
+   global_requester = req;
+   print(player(), format(
+      'w '+req+' requested to teleport to you. Click ',
+      'yb here', '^yb here', '!/tpa accept',
+      'w  to accept it.'
+   ));
 ));
 ```
  
@@ -4557,36 +4556,36 @@ print(player(),格式(
 从事件中解除特定函数的绑定。要绑定到事件的函数需要具有相同数目的
 操作试图绑定到的参数(请参见上面的列表)。通过`/script load`加载的模块中的所有调用
 处理特定内置事件的脚本将自动绑定,并在卸载脚本时不绑定。
-#记分牌
+# 计分板
  
-### `scoreboard()`,`scoreboard(objective)`,`scoreboard(objective,key)`,`scoreboard(objective,key,value)`
+### `scoreboard()`, `scoreboard(objective)`, `scoreboard(objective, key)`, `scoreboard(objective, key, value)`
  
-显示或修改单个记分牌值。不带参数,返回当前目标的列表。
+显示或修改单个计分板值。不带参数,返回当前目标的列表。
 如果指定了`objective`,则列出与当前目标关联的所有键(玩家),如果目标不存在,则列出`null`。
 具有指定的`objective`和
-`key`,返回给定玩家目标的当前值(key)。使用附加的`value`设置新的记分牌
+`key`,返回给定玩家目标的当前值(key)。使用附加的`value`设置新的计分板
 值,返回与`key`关联的上一个值。如果`value`为空,则重置记分板值。
  
-### `记分牌\添加(目标,标准?)`
+### `scoreboard_add(objective, criterion?)`
  
 向记分板添加新目标。如果未指定`criteria`,则假定为`dummy`。
 如果已创建目标,则返回`true`;如果已存在具有指定名称的目标,则返回`null`。
  
-如果条件不存在,则抛出`未知条件`。
+如果条件不存在,则抛出`unknown_criterion`。
  
 <pre>
-记分牌\添加(`计数器`)
-记分牌添加(`等级`,`等级`)
+scoreboard_add('counter')
+scoreboard_add('lvl','level')
 </pre>
  
 ### `scoreboard remove(目标)``scoreboard remove(目标,键)`
  
 删除整个目标或记分板中与该键相关的条目。
 如果目标已存在且已删除,或以前存在,则返回`true`
-如果球员得分被移除,记分牌的值。如果目标不存在或缺少键,则返回`null`
+如果球员得分被移除,计分板的值。如果目标不存在或缺少键,则返回`null`
 为了目标。
  
-###记分牌显示(地点,目标)`
+### 计分板显示(地点,目标)`
  
 设置指定`目标`的显示位置。如果`objective`为`null`,则清除显示。如果目标无效,
 返回`null`。
@@ -5373,7 +5372,7 @@ Scarpet不会影响统计数据的条目,即使它只是创建空条目。带有
 这可能意味着您的输入错误,或者统计数据的值实际上为 `0` 。
  
  
-### `system info()`,`system info(属性)`
+### `system_info()`,`system_info(属性)`
 在不带任何参数的情况下调用时,获取系统属性的值或将所有信息作为映射返回。它可以用来
 获取各种信息,大多数不改变,或只能通过低级别
 系统调用。在所有情况下,这些仅以只读形式提供。
@@ -5395,7 +5394,7 @@ scarpet应用程序空间中的可用选项：
 *`世界繁殖点`-世界繁殖点
  
 相关游戏相关属性
-*`游戏难度`-游戏当前的难度：`和平`,`简单`,`正常`或`困难``
+*`游戏难度`-游戏当前的难度：`和平`,`简单`,`正常`或`困难`
 *`game hardcore`-布尔值,判断游戏是否处于硬核模式
 *`game storage format`-世界保存文件的格式,可以是`McRegion`或`Anvil``
 *`game default gamemode`-新玩家的默认游戏模式
@@ -5409,7 +5408,7 @@ scarpet应用程序空间中的可用选项：
 *`game protocol`-协议版本号
 *`game pack version`-数据包版本号
 *`game data version`-游戏的数据版本。返回一个整数,以便比较。
-*`game\ u stable`-表示它是生产版本还是快照
+*`game stable`-表示它是生产版本还是快照
   
 服务器相关属性
 *`server motd`-加入时可见的服务器的motd
