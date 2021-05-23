@@ -1849,7 +1849,7 @@ range(-0.3, 0.3, 0.1)  => [-0.3, -0.2, -0.1, 0, 0.1, 0.2]
 range(0.3, -0.3, -0.1) => [0.3, 0.2, 0.1, -0, -0.1, -0.2]
 </pre>
  
-##地图操作
+## 地图操作
  
 Scarpet支持map结构,aka hashmaps,dicts等。map结构也可以使用,`null`值作为集合。
 除了容器访问功能外,(`,get,put,has,delete`),包括以下函数：
@@ -1886,7 +1886,8 @@ reduce(range(10), put(_a, _, _*_); _a, {})
 ### `keys(map), values(map), pairs(map)`
  
 返回映射中所有项的键,值和键值对的完整列表(2元素列表)
-#Minecraft特定API和`scarpet`语言加载项和命令
+
+# Minecraft特定API和`scarpet`语言加载项和命令
  
 下面是有关Minecraft的函数列表，如果没有他们，CarpetScrpt就可以不依赖于Minecraft运行了
  
