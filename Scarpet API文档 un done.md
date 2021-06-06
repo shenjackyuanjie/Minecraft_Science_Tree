@@ -2766,15 +2766,15 @@ loaded(100000,100,1000000)  => 0
 只能在几个状态下保持稳定：`full`,`features`,`liquid carvers`和`structure start`。返回`null`
 如果块不在内存中,除非用可选的`true`调用。
  
-### `U时间(pos)`
+### `inhabited_time(pos)`
  
 返回块的时间。
  
-### `spawn势(pos)`
+### `spawn_potential(pos)`
  
-返回某个位置的繁殖潜能(仅限1.16+)
+返回某个位置的刷怪势能(仅限1.16+)
  
-### `reload\块(pos)`
+### `reload_chunk(pos)`
  
 向客户端发送完整的区块数据。当发生了很多事情并且你想在客户机上更新它时很有用。
  
@@ -2813,34 +2813,35 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
 ``scarpet custom``,`configured features`,`structures`,`features`,`configured structures``
  
 ### 以前的结构名称,包括变体(MC1.16.1及以下版本)
-*`纪念碑`：海洋纪念碑。在固定的Y坐标下生成,以水包围自身。
-*`要塞`：幽冥要塞。海拔高度不同,但受代码限制。
-*`豪宅`：林地豪宅
-*`丛林神殿`：丛林神殿
-*`大漠寺`：大漠寺。在固定的Y高度生成。
-*`endcity`：用Shulkers结束城市(在1.16.1中为`endcity`)
-*`冰屋`：冰屋
-*`海难`：海难
-*`海难2`：海难,搁浅
-*`女巫小屋``
-*‘海洋废墟’,‘海洋废墟小’,‘海洋废墟高’：海洋废墟的石头变体。
-*‘ocean ruit warm’,‘ocean ruit warm small’,‘ocean ruit warm tall’：海洋遗迹的砂岩变体。
-*`宝藏`：一个宝箱。是的,它是一个整体结构。
-*‘劫掠者前哨’：劫掠者前哨。
-*`矿井`：矿井。
-*``mineshoft_mesa``：矿井的台地(荒地)版本。
-*`村庄`：平原,橡树村。
-*`村庄\沙漠`：沙漠,砂岩村庄。
-*`大草原村`：大草原,相思村。
-*`taiga村`：taiga,云杉村。
-*‘雪村’：加拿大,雷诺尔。
-*地下化石：一堆骨头(1.16)
-*`毁灭之门`：毁灭之门,随机变量。
-*`bastion remain``：Piglin堡垒,块的随机变体(1.16)
-*`bastion rements housing`：庇林堡垒的住房单元版本(1.16)
-*`bastion remain stable`：霍格林马厩版的q piglin bastion(1.16)
-*‘堡垒残余宝藏’：庇林堡垒的宝藏室版本(1.16)
-*`堡垒桥`：庇格林堡垒的桥版(1.16)
+*   `'monument'`海洋纪念碑。在固定的Y坐标下生成,以水包围自身。
+*   `'fortress'`幽冥要塞。海拔高度不同,但受代码限制。
+*   `'mansion'`林地豪宅
+*   `'jungle_temple'`丛林神殿
+*   `'desert_temple'`大漠寺。在固定的Y高度生成。
+*   `'endcity'`用Shulkers结束城市(在1.16.1中为`endcity`)
+*   `'igloo'`冰屋
+*   `'shipwreck'`海难
+*   `'shipwreck2'`海难,搁浅
+*   `'witch_hut'`
+*   `'ocean_ruin'`, `ocean_ruin_small'`, `ocean_ruin_tall'`海洋废墟的石头变体。
+*   `'ocean_ruin_warm'`, `ocean_ruin_warm_small'`, `ocean_ruin_warm_tall'`海洋遗迹的砂岩变体。
+*   `'treasure'`一个宝箱。是的,它是一个整体结构。
+*   `'pillager_outpost'`劫掠者前哨。
+*   `'mineshaft'`矿井。
+*   `'mineshaft_mesa'`矿井的台地(荒地)版本。
+*   `'village'`平原,橡树村。
+*   `'village_desert'`沙漠,砂岩村庄。
+*   `'village_savanna'`大草原,相思村。
+*   `'village_taiga'`taiga,云杉村。
+*   `'village_snowy'`加拿大,雷诺尔。
+*   `'nether_fossil'`一堆骨头(1.16)
+*   `'ruined_portal'`毁灭之门,随机变量。
+*   `'bastion_remnant'`Piglin堡垒,块的随机变体(1.16)
+*   `'bastion_remnant_housing'`庇林堡垒的住房单元版本(1.16)
+*   `'bastion_remnant_stable'`霍格林马厩版的q piglin bastion(1.16)
+*   `'bastion_remnant_treasure'`庇林堡垒的宝藏室版本(1.16)
+*   `'bastion_remnant_bridge'` 庇格林堡垒的桥版(1.16)
+
  
 ### 功能名称(1.16.1及以下版本)
 *   `'oak'`
@@ -5460,14 +5461,14 @@ Scarpet相关属性
 注释是任何以双斜杠开始,并一直延续到行尾的内容：
  
 <pre>
-foo=1;
-//这是一个评论
-巴=2;
-//这不管用,所以我把它注释掉了
-//baz=foo()
+foo = 1;
+//This is a comment
+bar = 2;
+// This never worked, so I commented it out
+// baz = foo()
 </pre>
  
-### `/script加载/卸载<app>(?全局)`
+### `/script load/unload <app> (?global)`
  
 加载操作将从磁盘加载脚本代码并立即执行。你可能会用它来加载
 以后使用的一些存储过程。要重新加载模块,只需再次键入`/script load`。重新加载删除
@@ -5487,7 +5488,7 @@ foo=1;
  
  
  
-### `/script in<app>`
+### `/script in <app> ...`
  
 允许在特定应用程序中运行普通/脚本命令,如`run,invoke,…,globals`等。。。
  
@@ -5499,7 +5500,7 @@ foo=1;
 程序,只需运行`/script run函数(a,b)->(…)`命令你的程序一次,忘记一次
 过程中,使用`undef`函数：`/script run undef(`function`)`
  
-### `/script调用<fun><args?>`
+### `/script invoke <fun> <args?> ...`
  
 相当于运行`/script run fun(args,…)`,但是您可以获得
 命令名,以及运行这些命令所需的较低权限级别(因为播放器不能运行任何自定义命令)
@@ -5511,14 +5512,14 @@ foo=1;
 提供了参数。建议定义函数的运算符使用描述性参数名称,因为
 将对调用程序可见,并形成理解每个参数的作用的基础。
  
-`invoke`family of commands tab将完成任何不以```````开头的存储函数,它仍将
-允许运行以`````开头的过程,但不建议它们,并禁止执行任何隐藏的存储过程,
-所以那些以``````开头的。以防操作员为了方便而需要使用子例程,并且不想暴露
+`invoke`family of commands tab将完成任何不以`'__'`开头的存储函数,它仍将
+允许运行以`'__'`开头的过程,但不建议它们,并禁止执行任何隐藏的存储过程,
+所以那些以`'__'`开头的。以防操作员为了方便而需要使用子例程,并且不想暴露
 如果将它们发送给`invoke`调用者,则可以使用此机制。
  
 <pre>
-/script run示例\函数(const,phrase,price)->print(const+``+phrase+``+price)
-/脚本调用示例函数pi花费5
+/script run example_function(const, phrase, price) -> print(const+' '+phrase+' '+price)
+/script invoke example_function pi costs 5
 </pre>
  
 ### `/script invokepoint<fun><coords x y z><args?>`
@@ -5543,18 +5544,18 @@ foo=1;
 与raw`/script run`不同,这些命令受vanilla fill/clone命令32k块的限制,它可以
 使用地毯模组自己的`/carpet fillLimit`命令进行更改。
  
-### `/脚本扫描原点<x y z>角点<x y z>角点<x y z>表达式`
+### `/script scan origin<x y z> corner<x y z> corner<x y z> expr`
  
 计算区域中每个点的表达式并返回成功数(结果为正)。自从
 命令本身不会影响区域,效果会有副作用。
  
-### `/script fill origin<x y z>corner<x y z>corner<x y z>`expr`<block>(?更换<replacement>)`
+### `/script fill origin<x y z> corner<x y z> corner<x y z> "expr" <block> (? replace <replacement>)`
  
 可以将其视为常规填充命令,它根据命令的结果是否成功来设置块。
 请注意,表达式用引号括起来。谢天谢地,`scarpet`中的字符串常量使用单引号。可以用来
 填充复杂的几何形状。
  
-### `/script outline origin<x y z>corner<x y z>corner<x y z>`expr`<block>(?更换<replacement>)`
+### `/script outline origin<x y z> corner<x y z> corner<x y z> "expr" <block> (? replace <replacement>)`
  
 与`fill`命令类似,它为区域中的每个块计算表达式,但在本例中是设置块
 其中条件为真,任何相邻区块的评估均为负。这样可以创建曲面
@@ -5563,13 +5564,13 @@ foo=1;
 以下是绘制半径为32个块的球体的七种方法的示例,以0 100 0为中心：
  
 <pre>
-/脚本轮廓0 100 0-40 60-40 140 40`x*x+y*y+z*z<32*32`白色彩绘玻璃替换空气
-/脚本轮廓0 100 0-40 60-40 140 40`x*x+y*y+z*z<=32*32`白色彩绘玻璃替换空气
-/脚本轮廓0 100 0-40 60-40 140 40`x*x+y*y+z*z<32.5*32.5`白色彩绘玻璃替换空气
-/脚本填充0 100 0-40 60-40 40 40`地板(sqrt(x*x+y*y+z*z))==32`白色染色玻璃替换空气
-/脚本填充0 100 0-40 60-40 40 40`圆形(sqrt(x*x+y*y+z*z))==32`白色着色玻璃替换空气
-/脚本填充0 100 0-40 60-40 40 40 40`天花板(sqrt(x*x+y*y+z*z))==32`白色染色玻璃替换空气
-/绘制球体0 100 0 32白色彩绘玻璃替换空气//毛绒圆球(sqrt(x*x+y*y+z*z)-rand(abs(y))==32
+/script outline 0 100 0 -40 60 -40 40 140 40 "x*x+y*y+z*z <  32*32" white_stained_glass replace air
+/script outline 0 100 0 -40 60 -40 40 140 40 "x*x+y*y+z*z <= 32*32" white_stained_glass replace air
+/script outline 0 100 0 -40 60 -40 40 140 40 "x*x+y*y+z*z <  32.5*32.5" white_stained_glass replace air
+/script fill    0 100 0 -40 60 -40 40 140 40 "floor(sqrt(x*x+y*y+z*z)) == 32" white_stained_glass replace air
+/script fill    0 100 0 -40 60 -40 40 140 40 "round(sqrt(x*x+y*y+z*z)) == 32" white_stained_glass replace air
+/script fill    0 100 0 -40 60 -40 40 140 40 "ceil(sqrt(x*x+y*y+z*z)) == 32" white_stained_glass replace air
+/draw sphere 0 100 0 32 white_stained_glass replace air // fluffy ball round(sqrt(x*x+y*y+z*z)-rand(abs(y)))==32
 </pre>
  
 最后一种方法是world edit正在使用的方法(地毯模型的一部分)。原来,轮廓法
@@ -5585,7 +5586,7 @@ foo=1;
 让我们看看下面的例子。这是一个以递归方式计算斐波那契数的程序：
  
 <pre>
-fib(n)->if(n<3,1,fib(n-1)+fib(n-2));纤维蛋白原(8)
+fib(n) -> if(n<3, 1, fib(n-1)+fib(n-2) ); fib(8)
 </pre>
  
 这是一种非常糟糕的方法,因为我们需要计算的计算需求越多
@@ -5594,14 +5595,14 @@ fib(n)->if(n<3,1,fib(n-1)+fib(n-2));纤维蛋白原(8)
 它的执行。我们可以修改脚本如下
  
 <pre>
-fib(n)->(50);if(n<3,1,fib(n-1)+fib(n-2));纤维蛋白原(40)
+fib(n) -> ( game_tick(50); if(n<3, 1, fib(n-1)+fib(n-2) ) ); fib(40)
 </pre>
  
 但这永远不会结束,因为这样的调用将在`~2^40`滴答声之后结束。为了让我们的计算更有效率,
 但由于能够响应用户交互,其他命令以及中断执行,我们可以执行以下操作：
  
 <pre>
-fib(n)->(if (n==23,则勾选(50));if(n<3,1,fib(n-1)+fib(n-2));纤维蛋白原(40)
+fib(n) -> ( if(n==23, game_tick(50) ); if(n<3, 1, fib(n-1)+fib(n-2) ) ); fib(40)
 </pre>
  
 这会将fib(40)的计算速度从一分钟减慢到两分钟,但允许游戏继续运行
