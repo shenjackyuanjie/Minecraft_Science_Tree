@@ -23,15 +23,27 @@ Java edition 1.14.4 科技树。 (最新预发布: 1.0.1emmx + 1.0.1png)
 ## 鸣谢列表（排名不分先后）
 
 > @Fallen_Breath  
+
 > @GhartRS  
+
 > @Joker  
+
 > @Billchyi  
+
 > @Ten Of Spades  
+
 > @MIZUkiYuu  
+
 > @Wisky_pro  
+
 > [@Rayawa](https://github.com/Rayawa)  
+
 > @七里晨光  
+
 > @Alex.  
+
 > @flowerstarry_sky  
+
 > @Star_Where
+
 > @Chen
