@@ -10,9 +10,11 @@
  
 ## What do it have here?
 
-+ Java edition 1.15.2 science tree. (latest release: 1.1.1.emmx + 1.1.1.png)
++ Java edition 1.16.5 science tree (1.0.3.emmx + 1.0.3png)
 
-+ Java edition 1.14.4 science tree. (latest pre-release: 1.0.1.emmx + 1.0.1.png)
++ Java edition 1.15.2 science tree (1.1.1.emmx + 1.1.1.png)
+
++ Java edition 1.14.4 science tree (1.0.1.emmx + 1.0.1.png)
 
 ## Notices
 
@@ -21,15 +23,26 @@
 
 ## Acknowledgements (No particular order)
 
-> @Fallen_Breath  
-> @GhartRS  
-> @Joker  
+> [@Fallen_Breath](https://github.com/Fallen_Breath)
+
+> @GhartRS
+
+> @Joker
+
 > @Billchyi  
+
 > @Ten Of Spades  
+
 > @MIZUkiYuu  
+
 > @Wisky_pro  
+
 > [@Rayawa](https://github.com/Rayawa)  
+
 > @七里晨光  
+
 > @Alex. 
+
 > @flowerstarry_sky  
+
 > @Star_Where  

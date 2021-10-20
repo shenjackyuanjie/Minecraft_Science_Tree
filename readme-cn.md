@@ -10,9 +10,11 @@ For English version, please go [here](https://github.com/shenjackyuanjie/Minecra
 
 ## 最新版是什么？
 
-Java edition 1.15.2 科技树。 (最新发布: 1.1.1.emmx + 1.1.1png)
++ Java 版 1.16.5 科技树 (1.0.3.emmx + 1.0.3png)
 
-Java edition 1.14.4 科技树。 (最新预发布: 1.0.1emmx + 1.0.1png)
++ Java 版 1.15.2 科技树 (1.1.1.emmx + 1.1.1png)
+
++ Java 版 1.14.4 科技树 (1.0.1emmx + 1.0.1png)
 
 ## 注意事项
 
@@ -22,7 +24,7 @@ Java edition 1.14.4 科技树。 (最新预发布: 1.0.1emmx + 1.0.1png)
 
 ## 鸣谢列表（排名不分先后）
 
-> @Fallen_Breath  
+> [@Fallen_Breath](https://github.com/Fallen_Breath)
 
 > @GhartRS  
 
