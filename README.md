@@ -10,9 +10,9 @@ For English version, please go [here](https://github.com/shenjackyuanjie/Minecra
 
 ## 最新版是什么？
 
-+ Java 版 1.16.5 科技树 (1.0.3.emmx + 1.0.3png)
++ Java 版 1.16.5 科技树 (1.0.4emmx + 1.0.4png)
 
-+ Java 版 1.15.2 科技树 (1.1.1.emmx + 1.1.1png)
++ Java 版 1.15.2 科技树 (1.1.1emmx + 1.1.1png)
 
 + Java 版 1.14.4 科技树 (1.0.1emmx + 1.0.1png)
 
