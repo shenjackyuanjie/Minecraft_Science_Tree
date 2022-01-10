@@ -723,6 +723,7 @@ n的线性整流器。0低于0,n高于0。为什么不呢`max(0,n)`道德影响�
 ### `deg(rad)`
  
 随便用，请
+
 # 系统功能
  
 ## 类型转换函数
@@ -1932,15 +1933,15 @@ scarpet程序在游戏中的主要交付方式是以应用程序的形式出现�
 所以要么使用命令块,要么
 任意实体：`/execute as@e[type=bat,limit=1]例如在<app>globals`中运行脚本
 在`player`作用域的应用程序的全局作用域中运行任何东西都不是有意的。
-*``stay loaded``：默认为`true`。如果为true,并且`/scriptsautooad`已打开,则以下应用程序将
+*``stay_loaded``：默认为`true`。如果为true,并且`/scriptsautooad`已打开,则以下应用程序将
 启动后保持加载状态。否则,在第一次读取应用程序并获取配置后,服务器将把它们放下来。
 警告：所有应用程序在启动时都将运行一次,因此请注意它们的操作
 静态地,将执行一次。只有`脚本`文件夹中存在的应用程序才会自动加载。
-*``legacy command type support``—如果`true`,则应用程序通过` command()`函数定义legacy命令系统,
+*``legacy_command_type_support``—如果`true`,则应用程序通过` command()`函数定义legacy命令系统,
 命令函数的所有参数都将使用准将/香草风格的参数解析器及其类型来解释和使用
 会从他们的名字推断出来,否则
 遗留scarpet变量解析器将用于为命令提供参数。
-*``allow command conflicts`-如果定义了自定义应用程序命令树,应用程序引擎将检查并识别
+*``allow_command_conflicts`-如果定义了自定义应用程序命令树,应用程序引擎将检查并识别
 不同执行路径之间的冲突和歧义。虽然准将的命令不明确,
 而且他们往往执行正确,建议支持在这种情况下效果很差,而且很糟糕
 将警告并阻止此类应用程序加载错误消息。如果指定了`allow command conflicts`,并且
@@ -2179,7 +2180,7 @@ __config() -> {
 *``entitytype`：表示实体类型的字符串
 *`floatrange`：两个数字的一对,其中一个比另一个小
 *``players`：返回一个有效的播放器名称字符串列表,无论是否登录。如果配置为`single`,则只返回一个播放器或`null`。
-*`intrange`：与`floatrange`相同,但需要整数。
+*``intrange``：与`floatrange`相同,但需要整数。
 *`附魔`：附魔的名称
 *`slot`：提供库存类型和插槽的列表。可以用`restrict`配置
 `玩家,装备,盔甲,武器,容器,村民,马限制了玩家的选择
@@ -2190,7 +2191,7 @@ __config() -> {
 *``message``：带有扩展嵌入播放器名称的文本
 *``effect`：表示状态效果的字符串
 *``path`：有效的nbt路径
-*‘objective’：记分板目标名称的元组及其标准
+*``objective``：记分板目标名称的元组及其标准
 *``criteria`：计分板标准的名称
 *``particle``：粒子的名称
 *``recipe`：有效配方的名称。可输入配方数据函数。
@@ -2210,7 +2211,7 @@ __config() -> {
 *``swizzle``-一组轴作为字符串,已排序。
 *``time``—表示持续时间的刻度数。
 *``uuid``-有效uuid的字符串。
-*``surfacelocation```-x和z坐标对,浮点数。
+*``surfacelocation``-x和z坐标对,浮点数。
 *``location``-x,y和z坐标的三倍,如果
 提供整数坐标,可选修饰符为`true`。
  
@@ -2583,9 +2584,9 @@ With block或name返回该位置生物群落的名称,如果提供的生物群�
 *  `'top_material'`：表示顶面材质的未定位块
 *  `'under_material'`：未定位的块,表示位于表土下面的内容
 *  `'category'`：这个生物群落起源的母体生物群落。可能的值包括
-`'none'`, `'taiga'`, `'extreme_hills'`, `'jungle'`, `'mesa'`, `'plains'`, `'savanna'`,
-`'icy'`, `'the_end'`, `'beach'`, `'forest'`, `'ocean'`, `'desert'`, `'river'`,
-`'swamp'`, `'mushroom'` and  `'nether'`.
+`'none'`, `'taiga'`, `'extreme_hills'`, `'jungle'`, `'mesa'`, `'plains'`, `'savanna'`,
+`'icy'`, `'the_end'`, `'beach'`, `'forest'`, `'ocean'`, `'desert'`, `'river'`,
+`'swamp'`, `'mushroom'` and  `'nether'`.
 *  `'temperature'`：从0到1的温度
 *  `'fog_color'`：雾的RGBA颜色值
 *  `'foliage_color'`：叶的RGBA颜色值
@@ -2822,8 +2823,8 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
 *   `'shipwreck'`海难
 *   `'shipwreck2'`海难,搁浅
 *   `'witch_hut'`
-*   `'ocean_ruin'`, `ocean_ruin_small'`, `ocean_ruin_tall'`海洋废墟的石头变体。
-*   `'ocean_ruin_warm'`, `ocean_ruin_warm_small'`, `ocean_ruin_warm_tall'`海洋遗迹的砂岩变体。
+*   `'ocean_ruin'`, `ocean_ruin_small'`, `ocean_ruin_tall'`海洋废墟的石头变体。
+*   `'ocean_ruin_warm'`, `ocean_ruin_warm_small'`, `ocean_ruin_warm_tall'`海洋遗迹的砂岩变体。
 *   `'treasure'`一个宝箱。是的,它是一个整体结构。
 *   `'pillager_outpost'`劫掠者前哨。
 *   `'mineshaft'`矿井。
@@ -2837,9 +2838,9 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
 *   `'ruined_portal'`毁灭之门,随机变量。
 *   `'bastion_remnant'`Piglin堡垒,块的随机变体(1.16)
 *   `'bastion_remnant_housing'`庇林堡垒的住房单元版本(1.16)
-*   `'bastion_remnant_stable'`霍格林马厩版的q piglin bastion(1.16)
+*   `'bastion_remnant_stable'`霍格林马厩版的q piglin bastion(1.16)
 *   `'bastion_remnant_treasure'`庇林堡垒的宝藏室版本(1.16)
-*   `'bastion_remnant_bridge'` 庇格林堡垒的桥版(1.16)
+*   `'bastion_remnant_bridge'` 庇格林堡垒的桥版(1.16)
 
  
 ### 功能名称(1.16.1及以下版本)
@@ -2892,7 +2893,7 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
 *   `'sea_grass'`: 一片海草。需要水。
 *   `'sea_grass_river'`: 一个变种。
 *   `'kelp'`
-*   `'coral_tree'`, `'coral_mushroom'`, `'coral_claw'`: 珊瑚种类繁多,颜色随意。
+*   `'coral_tree'`, `'coral_mushroom'`, `'coral_claw'`: 珊瑚种类繁多,颜色随意。
 *   `'coral'`: 随机的珊瑚结构。产卵需要水。
 *   `'sea_pickle'`
 *   `'boulder'`: 一个巨大的塔伊加生物群落中的岩石,苔藓形成。无法正确更新客户端,需要重新登录。
@@ -2928,17 +2929,17 @@ Scarpet提供了方便的方法来访问和修改有关结构的信息以及在�
  
 这些包含一些常用的特性和结构,这些特性和结构不可能或很难通过普通的结构/特性获得。
  
-*  `'bastion_remnant_bridge'`： 堡垒残余桥版本
-*  `'bastion_remnant_hoglin_stable'`： 霍格林马厩是堡垒残余的版本
-*  `'bastion_remnant_treasure'`： 堡垒残余之宝版本
-*  `'bastion_remnant_units'`： 堡垒残余物的住房单位版本
-*  `'birch_bees'`: 总是用蜂箱生成的桦树,不同于用概率生成的标准
-*  `'coral'`： 随机独立的珊瑚特征,通常是`温暖的海洋植被`的一部分`
-*  `'coral_claw'`： 爪珊瑚特征
-*  `'coral_mushroom'`： 蘑菇珊瑚特色
-*  `'coral_tree'`： 树珊瑚特征
-*  `'fancy_oak_bees'` 
-*  `'oak_bees'`： 普通的橡树,有一个管理蜂巢,不同于标准的概率产生
+*  `'bastion_remnant_bridge'`： 堡垒残余桥版本
+*  `'bastion_remnant_hoglin_stable'`： 霍格林马厩是堡垒残余的版本
+*  `'bastion_remnant_treasure'`： 堡垒残余之宝版本
+*  `'bastion_remnant_units'`： 堡垒残余物的住房单位版本
+*  `'birch_bees'`: 总是用蜂箱生成的桦树,不同于用概率生成的标准
+*  `'coral'`： 随机独立的珊瑚特征,通常是`温暖的海洋植被`的一部分`
+*  `'coral_claw'`： 爪珊瑚特征
+*  `'coral_mushroom'`： 蘑菇珊瑚特色
+*  `'coral_tree'`： 树珊瑚特征
+*  `'fancy_oak_bees'` 
+*  `'oak_bees'`： 普通的橡树,有一个管理蜂巢,不同于标准的概率产生
  
  
 ### `structure_eligibility(pos, ?structure, ?size_needed)`
@@ -3072,15 +3073,15 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
  
 有关返回值和处理`break`和`continue`语句的信息,请参见上面的`scan`函数。
  
-###邻居(pos)`
+### `neighbours(pos)`
  
 返回参数的6个相邻块的列表。通常与`for`等其他循环函数一起使用。
  
 <pre>
-对于(邻域(x,y,z),air())=>4//块周围的air块数
+for(neighbours(x,y,z),air(_)) => 4 // number of air blocks around a block
 </pre>
  
-### `rect(中心,范围?,上限?)`
+### `rect(centre, range?, upper_range?)`
  
 返回一个迭代器,就像遍历块的矩形区域的`range`函数一样。如果只有中心
 点被指定,它在27个块上迭代。如果指定了`range`参数,则按相应的
@@ -3091,20 +3092,21 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
 ``range`和`positive range`可以具有相同的表示形式,只要它们是块值,它就会计算到中心的距离
 作为范围,而不是按原样获取值`
  
-### `菱形(中心位置,半径,高度?)`
+### `diamond(centre_pos, radius?, height?)`
  
 在菱形块区域上迭代。没有半径和高度,它的7个街区以中间为中心
 (街区+邻居)。指定半径后,它将在x和z坐标上展开形状,并在y坐标上以自定义高度展开形状。
 其中任何一个也可以是零。半径为0表示棍子,高度为0表示菱形垫。
-#实体API
+
+# 实体API
  
-##实体选择
+## 实体选择
  
 在使用实体之前必须先获取它们。实体还可以在调用脚本之间更改其状态,如果
 游戏滴答声出现在对程序的不同调用之间,或者如果程序自己调用`game tick`。
 在这种情况下-需要重新获取实体,或者代码应该说明实体正在消亡。
  
-### `player(),player(类型),player(名称)`
+### `player(), player(type), player(name)`
  
 在没有参数的情况下,它返回调用方播放器或最接近调用方的播放器。
 对于播放器范围的应用程序(这是一个默认值),它总是拥有的播放器或`null`如果它不存在,即使一些代码
@@ -3118,50 +3120,50 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
 ``creative``返回所有有创意的玩家,`spectating``返回所有有创意的玩家,和``！看着````,
 所有的人都不是在看球员。如果所有操作都失败,则使用`name`,如果相关玩家已登录。
  
-### `entity id(uuid),entity id(id)`
+### `entity_id(uuid), entity_id(id)`
  
 通过`entity~`ID``获取实体的ID,这对于维度和当前世界是唯一的
 运行,或通过UUID,通过`entity~ `UUID``获得。如果找不到这样的实体,则返回null。更安全的`存储`方式
 调用之间的实体,因为缺少的实体将返回`null`。使用UUID或数字ID的两个调用都是`O(1)`,
 但显然使用uuid需要更多的内存和计算。
  
-### `实体列表(描述符)`
+### `entity_list(descriptor)`
  
 返回当前维度中与指定描述符匹配的实体的全局列表。
-对`entity list`的调用总是从脚本执行的当前世界中获取实体。
+对`entity_list`的调用总是从脚本执行的当前世界中获取实体。
  
-### `实体类型(描述符)`
+### `entity_types(descriptor)`
  
 解析返回与其匹配的实体类型列表的给定描述符。返回的类型列表也是有效列表
 可以在需要实体类型的其他地方使用的描述符。
  
 目前,可以使用以下描述符：
  
-*`*`：所有实体,甚至`！有效的`,匹配所有实体类型。
-*`valid`-所有未死亡的实体(运行状况>0)。以下所有主要类别也仅限退货
+* `*`：所有实体,甚至`!valid`,匹配所有实体类型。
+* `valid` -所有未死亡的实体(运行状况>0)。以下所有主要类别也仅限退货
 `valid`类别中的实体。匹配所有实体类型。`！valid`匹配所有类型中已经失效的所有实体。
-*‘有生命的’——所有类似某种生物的实体
-*`投射物`-所有不存在的实体或类型,可以投射或投射,`！匹配所有类型
+* `living` ——所有类似某种生物的实体
+* `projectile`-所有不存在的实体或类型,可以投射或投射,`！匹配所有类型
 不是活着,而是不能抛掷或投射。
-*`地雷车`匹配所有地雷车类型。`！雷车`匹配所有不是活动的类型,但也不是雷车。使用复数
+* `minecarts`匹配所有矿车。`!minecarts`匹配所有不是活动的类型,但也不是雷车。使用复数
 因为`minecart`本身就是一个合适的实体类型。
-*‘不死生物’,‘节肢动物’,‘水生生物’,‘普通生物’,‘农夫’——属于这些群体的所有实体/类型。全部
+*  `undead`, `arthropod`, `aquatic`, `regular`, `illager`——属于这些群体的所有实体/类型。全部
 有生命的实体只属于其中一个。相应的负数(例如,`！亡灵`)对应于所有
 但不属于那个群体。实体组用于交互/战斗机制中,比如对不死生物的打击,或者刺穿
 对于水生生物。还有一些机械师与群体互动,比如和骗子一起敲钟。所有其他没有这些特征的暴徒都属于
 到`普通`组。
-*‘怪物’,‘生物’,‘环境物’,‘水’
+*  `monster`, `creature`, `ambient`, `water_creature`, `water_ambient`, `misc`
 以它们的繁殖群为基础的生物实体。否定描述符解析为所有不属于它的生命类型
 类别。
-*所有实体标签,包括与数据包一起提供的标签。内置实体标签包括：`skeletons`,`raiders`,
+* 所有实体标签,包括与数据包一起提供的标签。内置实体标签包括：`skeletons`,`raiders`,
 `蜂巢居住者(bee,duh),`箭头`和`撞击物`。
-*任何标准实体类型,相当于从`/courm`命令中选择,这是返回的选项之一
-按`entity types()`,但`fishing bobber`和`player`除外。
+* 任何标准实体类型,相当于从`/courm`命令中选择,这是返回的选项之一
+按`entity_types()`,但`fishing_bobber`和`player`除外。
  
 所有类别前面都可以加`！`它将获取所有有效(运行状况>0)但不可用的实体(除非另有说明)
 属于那个团体。
  
-### `entity\区域(类型,中心,距离)`
+### `entity_area(类型,中心,距离)`
  
  
 返回以`center`为中心且最多与`distance`块相距的区域中指定类型的实体
@@ -3176,7 +3178,7 @@ name,返回一个带有两个值的映射,其中`box`表示结构的边界框,`p
 实体区域比`实体选择器`简单,运行速度快约20%,但仅限于预定义的选择器和
 长方体搜索区域。
  
-### `entity\选择器(选择器)`
+### `entity_selector(选择器)`
  
 返回满足给定实体选择器的实体。在所有选择实体的方法中最复杂的,
 但是最能干的。选择器是缓存的,所以它应该和其他选择实体的方法一样快。不同于其他
@@ -3227,7 +3229,7 @@ map(entities area(`*`,x,y,z,30,30,30),run(`kill`+query(,`id`))//不杀死玩家
  
 实体头寸的三倍
  
-### `查询(e,`位置`)`
+### `query(e,`位置`)`
  
 实体位置(x,y和z坐标)和旋转(偏航,俯仰)的五元组
  
@@ -3247,7 +3249,7 @@ map(entities area(`*`,x,y,z,30,30,30),run(`kill`+query(,`id`))//不杀死玩家
  
 返回实体正在查看的三维矢量。
  
-### `查询(e,`运动`)`
+### `query(e,`运动`)`
  
 实体运动矢量的三倍,`l(运动x,运动y,运动z)`。运动代表所有力的速度
 施加在给定实体上的。不是`力量`的东西,比如自发的运动,或者来自地面的反应,都是
@@ -3257,7 +3259,7 @@ map(entities area(`*`,x,y,z,30,30,30),run(`kill`+query(,`id`))//不杀死玩家
  
 实体运动矢量的各个分量
  
-### `查询(e,`在地面`)`
+### `query(e,`在地面`)`
  
 如果en实体站在坚实的地面上并因此而倒塌,则返回`true`。
  
@@ -3267,7 +3269,7 @@ map(entities area(`*`,x,y,z,30,30,30),run(`kill`+query(,`id`))//不杀死玩家
  
 <pre>
 query(e,`name`)=>皮革工人
-查询(e,`custom name`)=>空
+query(e,`custom name`)=>空
 query(e,`type`)=>村民
 </pre>
  
@@ -3280,7 +3282,7 @@ query(e,`type`)=>村民
 运行(`/kill`+e~`command_name`);
 </pre>
  
-### `查询(e,`持久性`)`
+### `query(e,`持久性`)`
  
 返回mob是否有持久性标记。对于非mob实体返回`null`。
  
@@ -3288,11 +3290,11 @@ query(e,`type`)=>村民
  
 布尔值,如果实体骑在另一个实体上,则为真。
  
-### `查询(e,`is riden`)`
+### `query(e,`is riden`)`
  
 布尔值,如果另一个实体骑着它,则为真。
  
-### `查询(e,`乘客`)`
+### `query(e,`乘客`)`
  
 实体列表。
  
@@ -3328,7 +3330,7 @@ query(e,`type`)=>村民
  
 布尔值,如果实体是静默的,则为true。
  
-### `查询(e,`重力`)`
+### `query(e,`重力`)`
  
 布尔值,如果实体像大多数实体一样受重力影响,则为真。
  
@@ -3340,7 +3342,7 @@ query(e,`type`)=>村民
  
 布尔值,如果实体对激发免疫,则为真。
  
-### `查询(e,`维度`)`
+### `query(e,`维度`)`
  
 实体所在维度的名称。
  
@@ -3348,7 +3350,7 @@ query(e,`type`)=>村民
  
 以块为单位的实体高度。
  
-### `查询(e,`宽度`)`
+### `query(e,`宽度`)`
  
 以块为单位的图元宽度。
  
@@ -3356,11 +3358,11 @@ query(e,`type`)=>村民
  
 以块为单位的实体的眼睛高度。
  
-### `查询(e,`年龄`)`
+### `query(e,`年龄`)`
  
 实体的年龄(单位：ticks),即它存在的时间。
  
-### `查询(e,`繁殖年龄`)`
+### `query(e,`繁殖年龄`)`
  
 被动实体的繁殖年龄,以蜱为单位。如果是阴性,则是成年期,如果是阳性,则是繁殖冷却期。
  
@@ -3429,7 +3431,7 @@ query(e,`type`)=>村民
  
 Boolean,如果实体正在冲刺,则为true。
  
-### `查询(e,`游泳`)`
+### `query(e,`游泳`)`
  
 布尔值,如果实体正在游动,则为真。
  
@@ -3462,7 +3464,7 @@ Boolean,如果实体正在冲刺,则为true。
 *‘影子’：任何地毯阴影的真实玩家
 *`领域`：?
  
-### `查询(e,`类别`)`
+### `query(e,`类别`)`
 返回包含实体类别(敌对,被动,水,环境,杂项)的小写字符串。
  
 ### `query(e,`团队`)`
@@ -3482,7 +3484,7 @@ Boolean,如果实体正在冲刺,则为true。
 返回所连接客户端的可识别客户端类型。可能的结果包括`香草`或`地毯<version>`,其中
 version表示连接的客户端的版本。
  
-### `查询(e,`效果`,名称?)`
+### `query(e,`效果`,名称?)`
  
 如果没有额外的参数,它将返回活动实体上的效果列表。每个条目都是短的三倍
 效果名称,放大器和剩余持续时间(单位：ticks)。有一个论点,如果活着的实体没有激活的药剂,
@@ -3490,28 +3492,28 @@ version表示连接的客户端的版本。
  
 <pre>
 query(p,`effect`)=>[[haste,0,177],[speed,0,177]]
-查询(p,`effect`,`haste`)=>[0177]
-查询(p,`effect`,`resistance`)=>空
+query(p,`effect`,`haste`)=>[0177]
+query(p,`effect`,`resistance`)=>空
 </pre>
  
 ### `query(e,`health`)`
  
 表示剩余实体运行状况的数字,如果不适用,则为`null`。
  
-### `查询(e,`饥饿`)`
+### `query(e,`饥饿`)`
 ### `query(e,`saturation`)`
-### `查询(e,`用尽`)`
+### `query(e,`用尽`)`
  
 检索与玩家饥饿相关的信息。对于非玩家,返回`null`。
  
-### `查询(e,`吸收`)`
+### `query(e,`吸收`)`
  
 获得玩家的全神贯注(黄色的心,例如当有一个金苹果。)
  
-### `query(e,`xp`)`
-### `query(e,`xp level`)`
-### `query(e,`xp progress`)`
-### `query(e,`score`)`
+### `query(e,'xp')`
+### `query(e,'xp_level')`
+### `query(e,'xp_progress')`
+### `query(e,'score')`
  
 与玩家经验值相关的数字`xp`是玩家拥有的全部xp,`xp level`是在热工具栏中看到的级别,
 `xp progress`是一个介于0和1之间的浮点数,表示xp条的填充百分比,`score`是死亡时显示的数字
@@ -3520,7 +3522,7 @@ query(p,`effect`)=>[[haste,0,177],[speed,0,177]]
  
 表示剩余实体运行状况的数字,如果不适用,则为`null`。
  
-### `查询(e,`语言`)`
+### `query(e,`语言`)`
  
 对于任何非播放器实体返回`null`,如果不是,则以字符串形式返回播放器的语言。
  
@@ -3537,15 +3539,15 @@ query(p,`effect`)=>[[haste,0,177],[speed,0,177]]
  
 如果未指定`slot`,则默认为主指针。
  
-### `查询(e,`选定的插槽`)`
+### `query(e,`选定的插槽`)`
  
 表示实体库存的选定插槽的数字。目前只适用于玩家。
  
-### `query(e,`活动块`)`
+### `query(e,'活动块')`
  
 返回玩家当前挖掘的区块,由游戏服务器注册。
  
-### `query(e,`breaking progress`)`
+### `query(e,'breaking progress')`
  
 返回当前玩家挖掘块的当前中断进度,如果没有挖掘块,则返回`null`。
 中断进程(如果不为null)是0或以上的任意数字,而10表示该块应该已经被中断
@@ -3557,34 +3559,34 @@ query(p,`effect`)=>[[haste,0,177],[speed,0,177]]
 否则开采时间会更长的区块。
  
 [视频演示](https://youtu.be/zvEEuGxgCio)
-```py公司
-全局块={
-`橡木板`->0,
-`黑曜石`->1,
-`结束帧`->5,
-`基岩`->10
+```py
+global_blocks = {
+  'oak_planks' -> 0,
+  'obsidian' -> 1,
+  'end_portal_frame' -> 5,
+  'bedrock' -> 10
 };
   
-__在玩家上单击阻止(玩家,阻止,面)->
+__on_player_clicks_block(player, block, face) ->
 (
-步骤=全局_blocks:str(块);
-if (步长==0,
-销毁(块,-1);//instamine公司
-,步骤！=无效的,
-时间表(0,``u break`,player,pos(block),str(block),step,0);
-)
+   step = global_blocks:str(block);
+   if (step == 0,
+      destroy(block, -1); // instamine
+   , step != null,
+      schedule(0, '_break', player, pos(block), str(block), step, 0);
+   )
 );
- 
-_休息(玩家,位置,姓名,步幅,等级)->
+
+_break(player, pos, name, step, lvl) ->
 (
-当前=播放器~`活动块`;
-if (当前！=名称| |位置(当前)！=销售时点情报系统,
-修改(player,`breaking progress`,null);
+   current = player~'active_block';
+   if (current != name || pos(current) != pos, 
+      modify(player, 'breaking_progress', null);
    ,
-修改(玩家,`突破进度`,等级);
-if (等级>=10,销毁(位置,-1));
-时间表(步骤,``u break`,玩家,位置,姓名,步骤,等级+1)
-);
+      modify(player, 'breaking_progress', lvl);
+      if (lvl >= 10, destroy(pos, -1));
+      schedule(step, '_break', player, pos, name, step, lvl+1)
+   );
 )
 ```
  
@@ -3604,10 +3606,10 @@ if (等级>=10,销毁(位置,-1));
 (又名在高草中斗鸡)。
  
 无论选择什么选项,结果都可能是：
--如果没有任何东西可以触及,则返回null
--如果look以实体为目标,则为实体
--块值(如果块在可达范围内),或
--如果使用了`exact`选项并且命中成功,则为坐标三元组。
+- 如果没有任何东西可以触及,则返回null
+- 如果look以实体为目标,则为实体
+- 块值(如果块在可达范围内),或
+- 如果使用了`exact`选项并且命中成功,则为坐标三元组。
  
 ### `query(e,`属性`)``query(e,`属性`,名称)`
  
@@ -3615,7 +3617,7 @@ if (等级>=10,销毁(位置,-1));
 返回此实体的所有属性和值的映射。如果属性不适用于实体,
 或者实体不是活动实体,则返回`null`。
  
-### `查询(e,`大脑`,记忆)`
+### `query(e,'brain',记忆)`
  
 检索实体的大脑记忆。可能的内存单元高度依赖于游戏版本。大脑可用
 适用于村民(1.15+)和猪,猪,走狗和猪畜生(1.16+)。如果内存不存在或
@@ -3626,28 +3628,28 @@ if (等级>=10,销毁(位置,-1));
 在那里,和当前的ttl在滴答声。
  
 适用于1.15.2的可检索内存：
-*‘家’,‘工地’,‘集合点’,‘二次工地’,‘暴徒’,‘看得见的暴徒’,‘看得见的村民’,
-`最近的玩家`,`最近的可见玩家`,`行走目标`,`看目标`,`互动目标`,
-`繁殖目标`,`path`,`interactiable门`,`opened门`,`nearest床`,`hurt by`,`hurt by entity`,
-`最近的敌方`,`藏身处`,`听到钟声`,`无法到达`步行`目标`,
-`傀儡最后一次看见时间,`最后一次睡觉`,`最后一次醒来`,`最后一次在波依工作``
+* `home`, `job_site`, `meeting_point`, `secondary_job_site`, `mobs`, `visible_mobs`, `visible_villager_babies`,
+`nearest_players`, `nearest_visible_player`, `walk_target`, `look_target`, `interaction_target`,
+`breed_target`, `path`, `interactable_doors`, `opened_doors`, `nearest_bed`, `hurt_by`, `hurt_by_entity`,
+`nearest_hostile`, `hiding_place`, `heard_bell_time`, `cant_reach_walk_target_since`,
+`golem_last_seen_time`, `last_slept`, `last_woken`, `last_worked_at_poi`
  
 从1.16.2起可用的可检索存储器：
-*`home`,`job site`,`potential job site`,`meeting point`,`secondary job site`,`mobs`,`visible mobs`,
-`可见村民,最近玩家,最近可见玩家,最近可见目标玩家,
-`行走目标`,`look目标`,`attack目标`,`attack冷却目标`,`interaction目标`,`bride目标`,
-`骑行目标`,`path`,`INTERACTIVE门`,`OPEN门`,`NEASTER床`,`HART by`,`HART by实体`,`AVIOD目标`,
-`最近的敌方`,`藏身处`,`听到铃声`,`无法到达目标`,`最近发现傀儡`,
-``最后一次睡觉`,`最后一次醒来`,`最后一次工作地点`,`最近的成人`,`最近的被通缉物品`,
-`最近的敌人,`愤怒`,`普遍的愤怒`,`崇拜物品`,`时间试图达到崇拜物品`,
-`禁用步行欣赏物品,禁用欣赏,最近狩猎,庆祝地点,跳舞,
-`最近的可猎取者,最近的可猎取者,最近的可猎取者,最近的可猎取者,最近的不戴黄金者,
-`附近的成年猪`,`最近的可见的成年猪`,`最近的可见的成年猪`,
-`最近的可见的成人猪笼草`,`最近的可见的僵尸`,`可见的成人猪笼草计数`,
-`可见的``成人``霍格林``计数`,`最近的`玩家`,拿着``通缉物品`,`最近吃了`,`最近的`,`驱虫剂`,`平静了``
+* `home`, `job_site`, `potential_job_site`, `meeting_point`, `secondary_job_site`, `mobs`, `visible_mobs`,
+`visible_villager_babies`, `nearest_players`, `nearest_visible_players`, `nearest_visible_targetable_player`,
+`walk_target`, `look_target`, `attack_target`, `attack_cooling_down`, `interaction_target`, `breed_target`,
+`ride_target`, `path`, `interactable_doors`, `opened_doors`, `nearest_bed`, `hurt_by`, `hurt_by_entity`, `avoid_target`,
+`nearest_hostile`, `hiding_place`, `heard_bell_time`, `cant_reach_walk_target_since`, `golem_detected_recently`, 
+`last_slept`, `last_woken`, `last_worked_at_poi`, `nearest_visible_adult`, `nearest_visible_wanted_item`, 
+`nearest_visible_nemesis`, `angry_at`, `universal_anger`, `admiring_item`, `time_trying_to_reach_admire_item`,
+`disable_walk_to_admire_item`, `admiring_disabled`, `hunted_recently`, `celebrate_location`, `dancing`, 
+`nearest_visible_huntable_hoglin`, `nearest_visible_baby_hoglin`, `nearest_targetable_player_not_wearing_gold`,
+`nearby_adult_piglins`, `nearest_visible_adult_piglins`, `nearest_visible_adult_hoglins`,
+`nearest_visible_adult_piglin`, `nearest_visible_zombiefied`, `visible_adult_piglin_count`,
+`visible_adult_hoglin_count`, `nearest_player_holding_wanted_item`, `ate_recently`, `nearest_repellent`, `pacified`
  
  
-### `查询(e,`nbt`,路径?)`
+### `query(e,`nbt`,路径?)`
  
 返回实体的完整NBT。如果指定了path,那么它只获取NBT中与
 路径。有关`path`属性的说明,请参阅vanilla`/data get entity`命令。
@@ -3779,7 +3781,7 @@ if (等级>=10,销毁(位置,-1));
 设置实体是否服从任何碰撞,包括与地形和基本物理的碰撞。不影响
 玩家,因为他们是由客户端控制的。
  
-### `modify(e,`effect`,name?,duration?,amplifier?,show  particles?,show  icon?,ambient?)`
+### `modify(e, 'home', null), modify(e, 'home', block, distance?), modify(e, 'home', x, y, z, distance?)`
  
 将状态效果应用于活动实体。接受多个可选参数,默认为 `0` ,`true`,
 ``真`和`假`。如果未指定持续时间,或者它为null或0,则效果将被移除。如果未指定名称,
@@ -5138,9 +5140,9 @@ be`world/scripts/foo.sc`,系统管理的默认应用程序数据存储在`world/
  
 如果无法读取应用程序数据,则抛出`nbt read error`。
  
-### `store app data(标记)`
+### `store_app_data(标记)`
  
-注意：`store app data(tag,file)`和`store app data(tag,file,shared?)`用法已弃用。改用`write file`。
+注意：`store_app_data(tag,file)`和`store_app_data(tag,file,shared?)`用法已弃用。改用`write_file`。
  
 存储与world`/scripts`文件夹中的应用程序关联的应用程序数据。使用`file`参数保存
 立即调用由`file`定义的特定文件(在应用程序空间或脚本中)
@@ -5150,9 +5152,9 @@ be`world/scripts/foo.sc`,系统管理的默认应用程序数据存储在`world/
  
 如果文件保存成功,则返回`true`,否则返回`false`。
  
-对独占应用程序数据和共享数据文件夹使用与`加载应用程序数据`相同的文件结构。
+对独占应用程序数据和共享数据文件夹使用与`load_app_data`相同的文件结构。
  
-### `create\数据包(名称,数据)`
+### `create_datapack(名称,数据)`
  
 创建并加载自定义数据包。数据必须是表示文件结构和内容的映射
 目标包的json文件。
@@ -5173,84 +5175,84 @@ be`world/scripts/foo.sc`,系统管理的默认应用程序数据存储在`world/
  
 简介：
 <pre>
-脚本运行create datapack(`foo`,
+script run create_datapack('foo', 
 {
-`foo`->{`bar.json`->{
-`c`->正确,
-`d`->错误,
-`e`->{`foo`->[1,2,3]},
-`a`->`foobar`,
-‘b’->5
-} }
+    'foo' -> { 'bar.json' -> {
+        'c' -> true,
+        'd' -> false,
+        'e' -> {'foo' -> [1,2,3]},
+        'a' -> 'foobar',
+        'b' -> 5
+    } }
 })
 </pre>
  
 自定义尺寸示例：
 <pre>
-脚本运行create datapack(`funky world`{
-`data`->{`minecraft`->{`dimension`->{`custom ow.json`->{
-`类型`->`minecraft:the_end`,
-`发电机`->{
-`生物群落来源`->{
-`种子`->0,
-`大型生物群落`->错误,
-`类型`->`minecraft:vanilla_layered`
-},
-`种子`->0,
-`设置`->`minecraft:nether`,
-`类型`->`minecraft:noise`
-} } } } }
+script run create_datapack('funky_world',  {
+    'data' -> { 'minecraft' -> { 'dimension' -> { 'custom_ow.json' -> { 
+        'type' -> 'minecraft:the_end',
+        'generator' -> {
+            'biome_source' -> {
+                 'seed' -> 0,
+                 'large_biomes' -> false,
+                 'type' -> 'minecraft:vanilla_layered'
+            },
+            'seed' -> 0,
+            'settings' -> 'minecraft:nether',
+            'type' -> 'minecraft:noise'
+    } } } } }
 });
-检查_hidden_dimensions();=>[`时髦的世界`]
+check_hidden_dimensions();  => ['funky_world']
 </pre>
  
 战利品表示例：
 <pre>
-脚本运行create datapack(`silverfishes drop gravel`{
-`data`->{`minecraft`->{`loot tables`->{`entities`->{`silverfish.json`->{
-`类型`->`minecraft:entity`,
-`池`->[
-{
-`转鼓`->{
-`最小值`->0,
-`最大值`->1
-},
-`条目`->[
-{
-`类型`->`minecraft:item`,
-`名称`->`minecraft:gravel`
-}
-]
-}
-]
-} } } } }
+script run create_datapack('silverfishes_drop_gravel', {
+    'data' -> { 'minecraft' -> { 'loot_tables' -> { 'entities' -> { 'silverfish.json' -> {
+        'type' -> 'minecraft:entity',
+        'pools' -> [
+            {
+                'rolls' -> {
+                    'min' -> 0,
+                    'max' -> 1
+                },
+                'entries' -> [
+                    {
+                        'type' -> 'minecraft:item',
+                        'name' -> 'minecraft:gravel'
+                    }
+                ]
+            }
+        ]
+    } } } } }
 });
 </pre>
  
 配方示例：
 <pre>
-脚本运行create datapack(`craftable cobwebs`{
-`data`->{`scarpet`->{`recipes`->{`cobweb.json`->{
-`类型`->`工艺形状`,
-`模式`->[
-`SSS`,
-`SSS`,
-`SSS`
-],
-`键`->{
-`S`->{
-`项目`->`minecraft:string`
-}
-},
-`结果`->{
-`项目`->`minecraft:cobweb`,
-`计数`->1
-}
-} } } }
+script run create_datapack('craftable_cobwebs', {
+    'data' -> { 'scarpet' -> { 'recipes' -> { 'cobweb.json' -> {
+        'type' -> 'crafting_shaped',
+        'pattern' -> [
+            'SSS',
+            'SSS',
+            'SSS'
+        ],
+        'key' -> {
+            'S' -> {
+                'item' -> 'minecraft:string'
+            }
+        },
+        'result' -> {
+            'item' -> 'minecraft:cobweb',
+            'count' -> 1
+        }
+    } } } }
 });
 </pre>
  
-### `启用隐藏维度()`
+### `enable_hidden_dimensions()`
  
 函数读取当前数据包设置,检测这些数据包定义的尚未添加的新维度
 添加到当前维度的列表中,以便可以立即使用和访问它们。不管天气如何
@@ -5268,20 +5270,20 @@ be`world/scripts/foo.sc`,系统管理的默认应用程序数据存储在`world/
 错误地处理临时添加的维度,但是特性本身(自定义维度)对于Mojang来说显然是实验性的
 他们自己,就这样。
  
-### `tick time()`
+### `tick_time()`
  
 返回服务器计时计数器。可用于每n个滴答声运行一次特定操作,或计算游戏时间。
  
-### `世界时间()`
+### `world_time()`
  
 返回维度特定的记号计数器。
  
-### `日\时(新\时?)`
+### `day_time(new_time?)`
  
 返回当前白天时钟值。如果指定了`new time`,则设置一个新时钟
 达到这个值。日间时钟在所有维度之间共享。
  
-### `last tick times()`
+### `last_tick_times()`
  
 返回一个100长的最近滴答时间数组,以毫秒为单位。清单上的第一项是最近的记号
 如果在主勾号之外调用(通过计划任务或异步执行),则
@@ -5290,7 +5292,7 @@ be`world/scripts/foo.sc`,系统管理的默认应用程序数据存储在`world/
 个别的滴答声时间可能会有很大的不同,这些都需要采取与小颗粒的食物
 平均值。
  
-### `游戏时间(mstime?)`
+### `game_tick(mstime?)`
  
 使游戏运行一次。默认情况下,它运行它并将控制权返回给程序,但可以选择
 接受预期的记号长度(毫秒),等待额外的剩余时间,然后将控件返回给程序。
@@ -5317,26 +5319,26 @@ loop(1000,game_tick(100))//以两倍于1000 tick的速度运行游戏
 </pre>
  
  
-### `seed()`已弃用
+### `seed()` 已弃用
  
 返回当前世界种子。函数已弃用,请使用`system info(`world seed`)`insteads。
  
-### `当前维度()`
+### `current_dimension()`
  
 返回脚本在其中运行的当前维度。
  
-### `in\维度(smth,expr)`
+### `in_dimension(smth,expr)`
  
 使用不同的维度执行上下文计算表达式`expr``smth`可以是实体,
 世界本地化块,因此不是`block(`stone`)``,也不是表示如下维度的字符串：
-``幽冥`,`幽冥`,`终结`或`超世界`等。
+ `'nether'`, `'the_nether'`, `'end'` 或 `'overworld'`等。
  
 如果找不到提供的维度,则抛出`未知的维度`。
  
-### `view\距离()`
+### `view_distance()`
 返回服务器的视距。
  
-### `get\ mob\ U counts()`,`get\ mob\ U counts(类别)`1.16+
+### `get_mob_counts()`, `get_mob_counts(category)` 1.16+
  
 返回具有相应计数和容量的mob类别的映射(也称为mobcaps),或者仅返回一个元组
 特定类别的计数和限制。如果一个类别不是因为任何原因而产生的,那么它可能不是
@@ -5351,18 +5353,18 @@ loop(1000,game_tick(100))//以两倍于1000 tick的速度运行游戏
 如果您想安排模块中未定义的函数,请阅读上的提示
 `将函数引用传递给应用程序的其他模块`部分。
  
-### `statistic(播放器,类别,条目)`
+### `statistic(玩家,类别,条目)`
  
 在游戏中查询特定值的统计信息。类别包括：
  
-*`已开采`：已开采的区块
+*`mined`：已开采的区块
 *`crafted`:精心制作的项目
 *`used`：使用的项目
 *`breaked`：项目已损坏
 *`picked\\ up`：拾取的项目
 *`dropped`：删除的项目
-*`被杀`：暴徒被杀
-*`被杀`：暴徒被杀
+*`killed`：暴徒被杀
+*`killed_by`：暴徒被杀
 *`custom`：各种随机统计信息
  
 有关`entry`的选项,请查阅您的统计页面,或进行猜测。
