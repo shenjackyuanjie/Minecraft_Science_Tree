@@ -2374,9 +2374,9 @@ place_item('wooden_axe',x,y,z) // attempts to strip the log.
 设置具有可选自定义占用的指定类型的兴趣点(POI)。默认情况下,不占用新的poi。
 如果类型为`null`,则删除位置处的POI。在任何情况下,以前的POI也会被删除。可用的POI类型包括：
  
-*`‘失业’,‘军械工’,‘屠夫’,‘制图工’,‘牧师’,‘农民’,‘渔夫’,‘弗莱彻’,‘皮革工’,‘图书管理员’,‘梅森’,‘傻瓜’,‘牧羊人’,‘工具匠’,‘武器匠’,‘家’,‘会议’,‘蜂巢’,‘蜂巢’,‘幽冥门’`
+*   `'unemployed', 'armorer', 'butcher', 'cartographer', 'cleric', 'farmer', 'fisherman', 'fletcher', 'leatherworker', 'librarian', 'mason', 'nitwit', 'shepherd', 'toolsmith', 'weaponsmith', 'home', 'meeting', 'beehive', 'bee_nest', 'nether_portal'`
  
-有趣的是,`失业者`和`傻瓜`在游戏中没有使用,也就是说,它们可以被用作永久性空间
+有趣的是,`unemployed`和`nitwit`在游戏中没有使用,也就是说,它们可以被用作永久性空间
 scarpet应用程序的标记`会议室是唯一一个最大入住率增加了32人的会议室。
  
 如果提供的兴趣点不存在,则抛出`unknown poi`
@@ -5321,7 +5321,7 @@ loop(1000,game_tick(100))//以两倍于1000 tick的速度运行游戏
  
 ### `seed()` 已弃用
  
-返回当前世界种子。函数已弃用,请使用`system info(`world seed`)`insteads。
+返回当前世界种子。函数已弃用,请使用`system_info('world_seed')`
  
 ### `current_dimension()`
  
@@ -5375,21 +5375,21 @@ Scarpet不会影响统计数据的条目,即使它只是创建空条目。带有
 这可能意味着您的输入错误,或者统计数据的值实际上为 `0` 。
  
  
-### `system_info()`,`system_info(属性)`
+### `system_info()`, `system_info(property)`
 在不带任何参数的情况下调用时,获取系统属性的值或将所有信息作为映射返回。它可以用来
 获取各种信息,大多数不改变,或只能通过低级别
 系统调用。在所有情况下,这些仅以只读形式提供。
  
 scarpet应用程序空间中的可用选项：
-*`app name`—当前应用程序名,如果是默认应用程序,则为`null`
-*`app list`-除默认命令行应用程序之外的所有已加载应用程序的列表
-*`app scope`—全局变量和函数的作用域。可用选项为`player`和`global``
-*`app player`-返回在其下运行app的播放器列表。对于`全局`应用程序,列表始终为空
+*`app_name`—当前应用程序名,如果是默认应用程序,则为`null`
+*`app_list`-除默认命令行应用程序之外的所有已加载应用程序的列表
+*`app_scope`—全局变量和函数的作用域。可用选项为`player`和`global``
+*`app_player`-返回在其下运行app的播放器列表。对于`global`应用程序,列表始终为空
  
 相关世界相关财产
-*`世界名称`-世界的名称
-*`世界种子`-世界的数字种子
-*`世界维度`-世界维度列表
+*`world_name`-世界的名称
+*`world_seed`-世界的数字种子
+*`world_dimensions`-世界维度列表
 *`world path`-世界保存文件夹的完整路径
 *`world folder`—保存世界文件的直接文件夹的名称
 *`world carpet rules`-以映射形式返回所有地毯规则(`rule`->`value`)。请注意,值总是作为字符串返回,因此不能直接进行布尔比较。包含扩展及其命名空间中的规则(`namespace:rule`->`值`)。以后可以使用`on rule changes(rule,newValue)`事件侦听规则更改。
@@ -5402,8 +5402,8 @@ scarpet应用程序空间中的可用选项：
 *`game storage format`-世界保存文件的格式,可以是`McRegion`或`Anvil``
 *`game default gamemode`-新玩家的默认游戏模式
 *`game max players`-加入世界时允许的最大玩家数
-*`游戏视图距离`-视图距离
-*`game mod name`-基本mod的名称。期待`织物``
+*`game_view_distance`-视图距离
+*`game mod name`-基本mod的名称。期待`fabric``
 *`game version`-游戏的基本版本
 *`game target`-目标发布版本
 *`游戏主要目标`-主要发行目标。对于1.12.2,那就是12
