@@ -14,10 +14,10 @@ For English version, please go [here](https://github.com/shenjackyuanjie/Minecra
 | :---: | :---: | :---: |
 | Java 1.14.4 | v1.0.1 | ***不维护啦！*** |
 | Java 1.15.2 | v1.0.1 | ***不维护啦！*** |
-| Java 1.16.5 | v1.2.0 | 修 BUG |
-| Java 1.18.2 | v1.2.0 | 修 BUG |
-| Java 1.19.2-rc1 | v1.2.0 | 制作中 |
-| Java 全版本 | v1.2.0 | 制作中 |
+| Java 1.16.5 | v1.2.3 | 修 BUG |
+| Java 1.18.2 | v1.2.3 | 修 BUG |
+| Java 1.19.3 | v1.2.3 | 修 BUG |
+| Java 全版本 | v1.2.3 | 修 BUG |
 
 ## 注意事项
 

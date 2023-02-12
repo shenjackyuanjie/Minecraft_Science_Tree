@@ -14,18 +14,10 @@
 | :---: | :---: | :---: |
 | Java 1.14.4 | v1.0.1 | ***EOL*** |
 | Java 1.15.2 | v1.0.1 | ***EOL*** |
-| Java 1.16.5 | v1.2.0 | bug fix |
-| Java 1.18.2 | v1.2.0 | bug fix |
-| Java 1.19.2-rc1 | v1.2.0 | working on |
-| Java all | v1.2.0 | working on |
-
-<!-- + Java 1.14.4 v1.0.1 (***EOL***)  
-+ Java 1.15.2 v1.2 (***EOL***)
-+ Java 1.16.5 v1.2.0 (bug fix)
-+ Java 1.18.2 v1.2.0 (bug fix)
-+ Java 1.19.1 v1.2.0 (working on)
-+ Java all v 1.2.0 (working on) -->
-
+| Java 1.16.5 | v1.2.3 | bug fix |
+| Java 1.18.2 | v1.2.3 | bug fix |
+| Java 1.19.3 | v1.2.3 | bug fix |
+| Java all | v1.2.3 | bug fix |
 
 ## Notices
 
