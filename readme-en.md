@@ -28,11 +28,11 @@
 - technology add
   - SciCraft
     - get ***BEDROCK***!
-  - [@Fallen_Breath](https://github.com/Fallen_Breath)
+  - [@Fallen_Breath](https://github.com/Fallen-Breath)
     - item shadowing (? ~ 1.18.2)
   - redbread
     - a lot of note block and shulker box tec
-- [@Fallen_Breath](https://github.com/Fallen_Breath)
+- [@Fallen_Breath](https://github.com/Fallen-Breath)
     - make Minecraft Java Edition tec tree
 - mistake correct
   - [@GhartRs](https://github.com/GhastRs)

@@ -1,6 +1,6 @@
 # Minecraft_Science_Tree
 
-For English version, please go [here](https://github.com/shenjackyuanjie/Minecraft_Science_Tree/blob/master/readme-en.md).
+For English version, please go [here](https://github.com/shenjackyuanjie/Minecraft_Science_Tree/blob/tree/readme-en.md).
 
 ## 简介
 
@@ -29,11 +29,11 @@ For English version, please go [here](https://github.com/shenjackyuanjie/Minecra
 - 科技树添加
     - SciCraft
         - 获取基岩科技树（未包含）
-    - [@Fallen_Breath](https://github.com/Fallen_Breath)
+    - [@Fallen_Breath](https://github.com/Fallen-Breath)
         - 物品分身科技树
     - redbred
         - 一大堆音符盒和潜影盒相关科技树
-- [@Fallen_Breath](https://github.com/Fallen_Breath)
+- [@Fallen_Breath](https://github.com/Fallen-Breath)
     - 制作Minecraft Java Edition科技树
 - 纠错
     - [@GhartRs](https://github.com/GhastRs)
